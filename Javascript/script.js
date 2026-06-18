@@ -1,20 +1,3 @@
-function showGreeting() {
-    alert("Welcome to my Personal Website!");
-}
-
-function checkName() {
-
-    let name =
-    document.getElementById("username").value;
-
-    document.getElementById("result").innerHTML =
-    "Hello " + name;
-
-}
-
-
-
-
 document.getElementById("contactForm").addEventListener("submit", function(event) {
 
     event.preventDefault();
