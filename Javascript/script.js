@@ -15,5 +15,8 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     }
 
 });
+function showGreeting() {
+    alert("Hello! Welcome to my personal website. I hope you find it informative and enjoyable.");
+}
 
 
