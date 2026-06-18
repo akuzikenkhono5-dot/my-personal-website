@@ -1,0 +1,36 @@
+function showGreeting() {
+    alert("Welcome to my Personal Website!");
+}
+
+function checkName() {
+
+    let name =
+    document.getElementById("username").value;
+
+    document.getElementById("result").innerHTML =
+    "Hello " + name;
+
+}
+
+
+
+
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let message = document.getElementById("message").value;
+
+    if(name === "" || email === "" || message === "") {
+        document.getElementById("result").innerHTML =
+        "Please fill in all required fields.";
+    } else {
+        document.getElementById("result").innerHTML =
+        "Thank you! Your message has been sent.";
+    }
+
+});
+
+
